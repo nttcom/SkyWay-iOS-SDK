@@ -36,17 +36,6 @@ typedef NS_ENUM(NSUInteger, SKWDebugLevelEnum)
 };
 
 /**
- SkyWay Turn using type.
- */
-typedef NS_ENUM(NSUInteger, SKWTurnTypeEnum)
-{
-	/// Using turn only.
-	SKW_TURN_ONLY,
-	/// Using turn and turns.
-	SKW_TURN_AND_TURNS,
-};
-
-/**
  SKWPeer initialize option class
  */
 @interface SKWPeerOption : NSObject
@@ -71,8 +60,8 @@ typedef NS_ENUM(NSUInteger, SKWTurnTypeEnum)
 @property (nonatomic) NSString* domain;
 /// Using SkyWay TURN server. (Need to request for a TURN server use to SkyWay)
 @property (nonatomic) BOOL turn;
-/// Using SkyWay TURN type.
-@property (nonatomic) SKWTurnTypeEnum turnType;
+/// Using Hardware codec H.264 (iOS 8.0 later)
+@property (nonatomic) BOOL useH264;
 
 @end
 

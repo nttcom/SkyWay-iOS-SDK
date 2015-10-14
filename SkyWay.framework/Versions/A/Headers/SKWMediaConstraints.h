@@ -38,15 +38,15 @@ typedef NS_ENUM(NSUInteger, SKWCameraPositionEnum)
 
 /// Maximum width pixel. 0 is Engine default. Default value is 640.
 @property (nonatomic) NSUInteger maxWidth;
-/// Minimum width pixel. 0 is Engine default. Default value is 0.
+/// Minimum width pixel. 0 is Engine default. Default value is 192.
 @property (nonatomic) NSUInteger minWidth;
 /// Maximum height pixel. 0 is Engine default. Default value is 640.
 @property (nonatomic) NSUInteger maxHeight;
-/// Minimum height pixel. 0 is Engine default. Default value is 0.
+/// Minimum height pixel. 0 is Engine default. Default value is 144.
 @property (nonatomic) NSUInteger minHeight;
 /// Maximum frame rate. 0 is Engine default. Default value is 10.
 @property (nonatomic) NSUInteger maxFrameRate;
-/// Minimum frame rate. 0 is Engine default. Default value is 0.
+/// Minimum frame rate. 0 is Engine default. Default value is 2.
 @property (nonatomic) NSUInteger minFrameRate;
 
 /// Optional ///

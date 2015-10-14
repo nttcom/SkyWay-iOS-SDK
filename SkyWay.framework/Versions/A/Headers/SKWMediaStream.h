@@ -9,6 +9,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SKWMediaConstraints.h"
+
 /**
  Media stream
  */
@@ -58,6 +60,19 @@
  @return Enabling state.
  */
 - (BOOL)getEnableAudioTrack:(NSUInteger)pos;
+
+/**
+ Set camera position.
+ @param pos Camera position.
+ @return Method result.
+ */
+- (BOOL)setCameraPosition:(SKWCameraPositionEnum)pos;
+
+/**
+ Get camera position.
+ @return Current camera position.
+ */
+- (SKWCameraPositionEnum)getCameraPosition;
 
 @end
 
