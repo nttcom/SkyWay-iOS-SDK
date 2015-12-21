@@ -5,8 +5,23 @@ SkyWay iOS SDK release notes
 
 ###　新機能
 --------------------------
+**Version 0.2.1**
 
-Version 0.2.0
+- SWKMediaStreamにメソッドを追加しました。
+	- switchCamera
+
+- SKWPeerOptionの*turn*プロパティのデフォルトを ```YES``` に変更しました。
+
+- SKWPeerクラスの*disconnect*メソッドにて、既存のピア接続が切断される不具合を解消しました。
+
+- SKWMediaConstraintsクラスの*videoFlag*プロパティが ```NO``` の時に、再接続を行うと誤動作が発生する不具合を解消しました。
+
+- H.264のハードウェア支援有効化をデフォルトでOFFにしました。
+	- 現在接続数が多くなると不具合が発生することが確認されたためです。
+	- H.264での通信かつ接続数が少なくなるような利用をされる方で、CPU負荷や本体の発熱等を抑えたい場合は、SKWPeerOptionの*useH264*プロパティ（リファレンスには未記載）を ```YES``` にして下さい。
+
+--------------------------
+**Version 0.2.0**
 
 - iOS9、Xcode7での動作をサポートしました。ただし、Bitcodeにはサポートしていないため、Build SettingsのBuild Options > Enable BitcodeをNOに設定してください。
 
@@ -28,6 +43,6 @@ Version 0.2.0
 - SKWDataConnectionクラスのmetadataオプションの不具合を解消しました。
 
 --------------------------
-Version 0.1.0
+**Version 0.1.0**
 
 * first release

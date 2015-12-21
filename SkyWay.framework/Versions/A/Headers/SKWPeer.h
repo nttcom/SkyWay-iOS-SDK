@@ -62,6 +62,8 @@ typedef NS_ENUM(NSUInteger, SKWPeerEventEnum)
 	SKW_PEER_EVENT_DISCONNECTED,
 	/// Errors on the peer are almost always fatal and will destroy the peer.
 	SKW_PEER_EVENT_ERROR,
+	/// Emitted when the change reachability status.
+	SKW_PEER_EVENT_REACHABILITY,
 };
 
 /**

@@ -14,7 +14,7 @@
 /**
  SKWPeer connect options
  */
-@interface SKWConnectOption : NSObject
+@interface SKWConnectOption : NSObject < NSCopying >
 
 /// The optional label passed in or assigned by PeerJS when the connection was initiated.
 @property (nonatomic) NSString* label;

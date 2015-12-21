@@ -12,7 +12,7 @@
 /**
  SKWPeer call options
  */
-@interface SKWCallOption : NSObject
+@interface SKWCallOption : NSObject < NSCopying >
 
 /// Any type of metadata associated with the connection, passed in by whoever initiated the connection.
 @property (nonatomic) NSString* metadata;

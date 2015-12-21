@@ -21,6 +21,8 @@ typedef NS_ENUM(NSUInteger, SKWMediaConnectionEventEnum)
 {
 	/// Emitted when a remote peer adds a stream.
 	SKW_MEDIACONNECTION_EVENT_STREAM,
+	/// Emitted when a remote peer remove a stream.
+	SKW_MEDIACONNECTION_EVENT_REMOVE_STREAM,
 	/// Emitted when either you or the remote peer closes the media connection.
 	SKW_MEDIACONNECTION_EVENT_CLOSE,
 	/// Errors on the media conenction are almost always fatal and will destroy the media connection.

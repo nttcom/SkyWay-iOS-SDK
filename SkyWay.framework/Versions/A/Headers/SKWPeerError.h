@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger, SKWPeerErrorEnum)
 /**
  Error information class
  */
-@interface SKWPeerError : NSObject
+@interface SKWPeerError : NSObject < NSCopying >
 
 /// Error type
 @property (nonatomic, readonly) SKWPeerErrorEnum type;

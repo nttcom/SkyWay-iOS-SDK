@@ -12,7 +12,7 @@
 /**
  ICE server config
  */
-@interface SKWIceConfig : NSObject
+@interface SKWIceConfig : NSObject < NSCopying >
 
 /// STUN/TURN server URL string (ex. stun:stun.l.google.com:19302, turn:homeo@turn.bistri.com:80, turn:153.149.7.233:443?transport=udp, turn:153.149.7.233:443?transport=tcp)
 @property (nonatomic) NSString* url;

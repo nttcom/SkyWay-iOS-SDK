@@ -38,7 +38,7 @@ typedef NS_ENUM(NSUInteger, SKWDebugLevelEnum)
 /**
  SKWPeer initialize option class
  */
-@interface SKWPeerOption : NSObject
+@interface SKWPeerOption : NSObject < NSCopying >
 
 /// Type of the PeerServer. Defaults to PEER_TYPE_SKYWAY.
 @property (nonatomic) SKWPeerTypeEnum type;
@@ -56,7 +56,7 @@ typedef NS_ENUM(NSUInteger, SKWDebugLevelEnum)
 @property (nonatomic) NSArray* config;
 /// Prints log messages depending on the debug level passed in. Defaults to PEER_DEBUG_LEVEL_NO_LOGS.
 @property (nonatomic) SKWDebugLevelEnum debug;
-/// HTTP request origin URL
+/// Domain related to the SkyWay API Key
 @property (nonatomic) NSString* domain;
 /// Using SkyWay TURN server. (Need to request for a TURN server use to SkyWay)
 @property (nonatomic) BOOL turn;

@@ -25,7 +25,7 @@ typedef NS_ENUM(NSUInteger, SKWCameraPositionEnum)
 /**
  Media constraints class
  */
-@interface SKWMediaConstraints : NSObject
+@interface SKWMediaConstraints : NSObject < NSCopying >
 
 /// Using video track. Default value is YES.
 @property (nonatomic) BOOL videoFlag;

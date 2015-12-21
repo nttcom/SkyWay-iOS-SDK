@@ -74,6 +74,12 @@
  */
 - (SKWCameraPositionEnum)getCameraPosition;
 
+/**
+ Switch camera.
+ @return Method result.
+ */
+- (BOOL)switchCamera;
+
 @end
 
 
