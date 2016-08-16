@@ -5,6 +5,16 @@ SkyWay iOS SDK release notes
 
 ###　New features
 --------------------------
+**Version 0.2.2**
+
+- Fixed a bug in the metadata option of MediaConnection.
+
+- Added cameraMode property to SKWMediaConstraints Class.
+	- cameraMode
+  	- SKW_CAMERA_MODE_SWITCHABLE(default)：You can change the camera during the transmission of the media stream.
+		- SKW_CAMERA_MODE_ADJUSTABLE：You can change width/height.
+
+--------------------------
 **Version 0.2.1**
 
 - Added methods to SKWMediaStream Class.
@@ -27,7 +37,7 @@ SkyWay iOS SDK release notes
 
 - It is necessary to add the additional frameworks below.
 	- CoreVideo.framework
-	- VideoToolbox.framework 
+	- VideoToolbox.framework
 
 - Added methods to SKWMediaStream Class.
 	- setCameraPosition

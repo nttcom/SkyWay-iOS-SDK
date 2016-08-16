@@ -6,11 +6,8 @@
 #ifndef SKWPeer_SKWVideo_h
 #define SKWPeer_SKWVideo_h
 
+#import <UIKit/UIKit.h>
 
-#import <Foundation/Foundation.h>
-
-
-#import "RTCEAGLVideoView.h"
 
 #import "SKWMediaStream.h"
 
