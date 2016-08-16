@@ -23,6 +23,17 @@ typedef NS_ENUM(NSUInteger, SKWCameraPositionEnum)
 };
 
 /**
+ Device camera mode
+ */
+typedef NS_ENUM(NSUInteger, SKWCameraModeEnum)
+{
+    /// Camera Switchable
+    SKW_CAMERA_MODE_SWITCHABLE = 0,
+    /// Width/Height Adjustable
+    SKW_CAMERA_MODE_ADJUSTABLE = 1,
+};
+
+/**
  Media constraints class
  */
 @interface SKWMediaConstraints : NSObject < NSCopying >
@@ -33,6 +44,8 @@ typedef NS_ENUM(NSUInteger, SKWCameraPositionEnum)
 @property (nonatomic) BOOL audioFlag;
 /// Using camera position. Default value is SKW_CAMERA_POSITION_FRONT.
 @property (nonatomic) SKWCameraPositionEnum cameraPosition;
+/// Using camera mode. Default value is SKW_CAMERA_MODE_SWITCHABLE.
+@property (nonatomic) SKWCameraModeEnum cameraMode;
 
 /// Mandatory ///
 
