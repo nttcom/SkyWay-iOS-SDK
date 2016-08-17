@@ -11,7 +11,7 @@ SkyWay iOS SDK release notes
 
 - Added cameraMode property to SKWMediaConstraints Class.
 	- cameraMode
-  	- SKW_CAMERA_MODE_SWITCHABLE(default)：You can change the camera during the transmission of the media stream.
+  		- SKW_CAMERA_MODE_SWITCHABLE(default)：You can change the camera during the transmission of the media stream.
 		- SKW_CAMERA_MODE_ADJUSTABLE：You can change width/height.
 
 --------------------------
